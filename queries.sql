@@ -10,7 +10,7 @@ SELECT name from animals WHERE date_of_birth BETWEEN '2016-01-01' AND '2019-01-0
 SELECT name from animals WHERE neutered=true AND escape_attempts < 3;
 
 -- List date of birth of all animals named either "Agumon" or "Pikachu".
-SELECT date_of_birth from animas WHERE name IN ('Agumon', 'Pikachu');
+SELECT date_of_birth from animals WHERE name IN ('Agumon', 'Pikachu');
 
 -- List name and escape attempts of animals that weigh more than 10.5kg.
 SELECT name, escape_attempts from animals WHERE weight_kg > 10.5;
