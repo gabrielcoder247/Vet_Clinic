@@ -18,6 +18,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - If you have postgres install start the server by typing `psql` in your terminal
 - then create a Database by typing `CREATE DATABASE Db_name;`  and connect to the DB by `\c Db_name;`
 -  To create table `CREATE TABLE table_name;`
+-  alternatively you can follow [this link](https://www.postgresql.org/docs/current/tutorial-start.html)
 
 
 

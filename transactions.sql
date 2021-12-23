@@ -43,11 +43,11 @@ SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
 WHERE species_id IS NULL;
 COMMIT;
 
-
 UPDATE animals
 SET owners_id = (SELECT id FROM WHERE full_name = 'Sam Smith')
 WHERE name = 'Agumon';
 
 UPDATE animals
 SET owners_id = (SELECT id FROM owners WHERE full_name = 'Jennifer Orwell')
-WHERE name = 'Gabumon' OR name = 'Pikachu'
+WHERE name = 'Gabumon' OR name = 'Pikachu';
+COMMIT;
