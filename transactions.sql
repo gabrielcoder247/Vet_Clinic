@@ -29,3 +29,18 @@ SET weight_kg = -1 * weight_kg
 WHERE weight_kg < 0;
 SELECT * from animals;
 COMMIT;
+
+
+
+/*Modify animals transaction to contain species_id and  owners_id*/
+BEGIN;
+UPDATE animals
+SET species_id = 2
+WHERE name LIKE '%mon';
+
+UPDATE animals
+SET species_id = 1
+WHERE species_id is NULL;
+COMMIT;
+
+
