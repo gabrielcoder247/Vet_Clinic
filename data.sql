@@ -167,3 +167,79 @@ INSERT into animals (
 	true,
 	3
 );
+
+
+
+
+/* Populate owners table with sample data. */
+
+BEGIN;
+
+INSERT INTO owners(
+  full_name,
+  age
+) VALUES (
+  'Sam Smith',
+  34
+);
+
+
+-- Insert 'Jennifer Orwell 19 years old.'
+INSERT INTO owners (
+	full_name,
+	age
+) VALUES (
+	'Jennifer Orwell',
+	19
+);
+
+-- Insert 'Bob 45 years old.'
+INSERT INTO owners (
+	full_name,
+	age
+) VALUES (
+	'Bob',
+	45
+);
+
+-- Insert 'Melody Pond 77 years old.'
+INSERT INTO owners (
+	full_name,
+	age
+) VALUES (
+	'Melody Pond',
+	77
+);
+
+-- Insert 'Dean Winchester 14 years old.'
+INSERT INTO owners (
+	full_name,
+	age
+) VALUES (
+	'Dean Winchester',
+	14
+);
+
+-- Insert 'Jodie Whittaker 38 years old.'
+INSERT INTO owners (
+	full_name,
+	age
+) VALUES (
+	'Jodie Whittaker',
+	38
+);
+
+/* Populate species table with sample data. */
+
+INSERT INTO species (
+  name
+) VALUES (
+  'Pokemon'
+);
+
+INSERT INTO species (
+  name
+) VALUES (
+  'Digimon'
+);
+
