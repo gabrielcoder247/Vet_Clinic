@@ -29,13 +29,13 @@ CREATE TABLE vets (
     id SERIAL NOT NULL PRIMARY KEY,
     name varchar(100),
     age int,
-    date_of_graduation varchar
+    date_of_graduation date
 );
 
 
 CREATE TABLE specializations (
-    vet_id int,
-    species_id int,
+    vet_id int NOT NULL,
+    species_id int NOT NULL,
     CONSTRAINT fk_species FOREIGN KEY(species_id) REFERENCES species(id),
     CONSTRAINT fk_vets FOREIGN KEY(vet_id) REFERENCES vets(id)
 );
