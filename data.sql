@@ -267,28 +267,65 @@ VALUES
   (3, 2),
   (4, 2);
 
-  INSERT INTO visits
-  (animal_id, vet_id, date_of_visit)
+--   INSERT INTO visits
+--   (animal_id, vet_id, date_of_visit)
+-- VALUES
+-- 	( (SELECT id from animals where name = 'Agumon'), (SELECT id from vets where name = 'William Tatcher'), '2020-05-24' ),
+-- 	( (SELECT id from animals where name = 'Agumon'), (SELECT id from vets where name = 'Stephanie Mendez'), '2020-07-22' ),
+-- 	( (SELECT id from animals where name = 'Gabumon'), (SELECT id from vets where name = 'Jack Harkness'), '2021-02-02' ),
+-- 	( (SELECT id from animals where name = 'Pikachu'), (SELECT id from vets where name = 'Maisy Smith'), '2020-01-05' ),
+-- 	( (SELECT id from animals where name = 'Pikachu'), (SELECT id from vets where name = 'Maisy Smith'), '2020-04-08' ),
+-- 	( (SELECT id from animals where name = 'Pikachu'), (SELECT id from vets where name = 'Maisy Smith'), '2020-05-14' ),
+-- 	( (SELECT id from animals where name = 'Devimon'), (SELECT id from vets where name = 'Stephanie Mendez'), '2021-05-04' ),
+-- 	( (SELECT id from animals where name = 'Charmander'), (SELECT id from vets where name = 'Jack Harkness'), '2021-02-24' ),
+-- 	( (SELECT id from animals where name = 'Plantmon'), (SELECT id from vets where name = 'Maisy Smith'), '2019-12-21' ),
+-- 	( (SELECT id from animals where name = 'Plantmon'), (SELECT id from vets where name = 'William Tatcher'), '2020-08-10' ),
+-- 	( (SELECT id from animals where name = 'Plantmon'), (SELECT id from vets where name = 'Maisy Smith'), '2021-Apr-07' ),
+-- 	( (SELECT id from animals where name = 'Squirtle'), (SELECT id from vets where name = 'Stephanie Mendez'), '2019-09-29' ),
+-- 	( (SELECT id from animals where name = 'Angemon'), (SELECT id from vets where name = 'Jack Harkness'), '2020-10-03' ),
+-- 	( (SELECT id from animals where name = 'Angemon'), (SELECT id from vets where name = 'Jack Harkness'), '2020-11-04' ),
+-- 	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2019-01-24' ),
+-- 	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2019-05-15' ),
+-- 	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2020-02-27' ),
+-- 	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2020-08-03' ),
+-- 	( (SELECT id from animals where name = 'Blossom'), (SELECT id from vets where name = 'Stephanie Mendez'), '2020-05-24' ),
+-- 	( (SELECT id from animals where name = 'Blossom'), (SELECT id from vets where name = 'William Tatcher'), '2021-01-11' );
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
 VALUES
-	( (SELECT id from animals where name = 'Agumon'), (SELECT id from vets where name = 'William Tatcher'), '2020-05-24' ),
-	( (SELECT id from animals where name = 'Agumon'), (SELECT id from vets where name = 'Stephanie Mendez'), '2020-07-22' ),
-	( (SELECT id from animals where name = 'Gabumon'), (SELECT id from vets where name = 'Jack Harkness'), '2021-02-02' ),
-	( (SELECT id from animals where name = 'Pikachu'), (SELECT id from vets where name = 'Maisy Smith'), '2020-01-05' ),
-	( (SELECT id from animals where name = 'Pikachu'), (SELECT id from vets where name = 'Maisy Smith'), '2020-04-08' ),
-	( (SELECT id from animals where name = 'Pikachu'), (SELECT id from vets where name = 'Maisy Smith'), '2020-05-14' ),
-	( (SELECT id from animals where name = 'Devimon'), (SELECT id from vets where name = 'Stephanie Mendez'), '2021-05-04' ),
-	( (SELECT id from animals where name = 'Charmander'), (SELECT id from vets where name = 'Jack Harkness'), '2021-02-24' ),
-	( (SELECT id from animals where name = 'Plantmon'), (SELECT id from vets where name = 'Maisy Smith'), '2019-12-21' ),
-	( (SELECT id from animals where name = 'Plantmon'), (SELECT id from vets where name = 'William Tatcher'), '2020-08-10' ),
-	( (SELECT id from animals where name = 'Plantmon'), (SELECT id from vets where name = 'Maisy Smith'), '2021-Apr-07' ),
-	( (SELECT id from animals where name = 'Squirtle'), (SELECT id from vets where name = 'Stephanie Mendez'), '2019-09-29' ),
-	( (SELECT id from animals where name = 'Angemon'), (SELECT id from vets where name = 'Jack Harkness'), '2020-10-03' ),
-	( (SELECT id from animals where name = 'Angemon'), (SELECT id from vets where name = 'Jack Harkness'), '2020-11-04' ),
-	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2019-01-24' ),
-	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2019-05-15' ),
-	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2020-02-27' ),
-	( (SELECT id from animals where name = 'Boarmon'), (SELECT id from vets where name = 'Maisy Smith'), '2020-08-03' ),
-	( (SELECT id from animals where name = 'Blossom'), (SELECT id from vets where name = 'Stephanie Mendez'), '2020-05-24' ),
-	( (SELECT id from animals where name = 'Blossom'), (SELECT id from vets where name = 'William Tatcher'), '2021-01-11' );
+  (1, 1, '2020-5-24'),
+  (1, 3, '2020-7-22'),
+  (2, 4, '2021-2-2'),
+  (3, 2, '2020-1-5'),
+  (3, 2, '2020-3-8'),
+  (3, 2, '2020-5-14'),
+  (4, 3, '2021-5-4'),
+  (5, 4, '2021-2-24'),
+  (6, 2, '2019-12-21'),
+  (6, 1, '2020-8-10'),
+  (6, 2, '2021-4-7'),
+  (7, 3, '2019-9-29'),
+  (8, 4, '2020-10-3'),
+  (8, 4, '2020-11-4'),
+  (9, 2, '2019-1-24'),
+  (9, 2, '2019-5-15'),
+  (9, 2, '2020-2-27'),
+  (9, 2, '2020-8-3'),
+  (10, 3, '2020-5-24'),
+  (10, 1, '2021-1-11');
 
   COMMIT;
+
+
+  -- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- This will add 3.594.280 visits considering you have 10 animals, 4 vets, and it will use around ~87.000 timestamps (~4min approx.)
+INSERT INTO visits (animal_id, vet_id, date_of_visit) SELECT * FROM (SELECT id FROM animals) animal_ids, (SELECT id FROM vets) vets_ids, generate_series('1980-01-01'::timestamp, '2021-01-01', '4 hours') visit_timestamp;
+
+-- This will add 2.500.000 owners with full_name = 'Owner <X>' and email = 'owner_<X>@email.com' (~2min approx.)
+insert into owners (full_name, email) select 'Owner ' || generate_series(1,2500000), 'owner_' || generate_series(1,2500000) || '@mail.com';
+
+-- The following queries are taking too much time (1 sec = 1000ms can be considered as too much time for database query). Try them on your machine to confirm it:
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';

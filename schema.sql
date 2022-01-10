@@ -61,3 +61,15 @@ ALTER TABLE animals
 ALTER TABLE animals
     ADD owners_id INT,
     ADD CONSTRAINT owners_id FOREIGN KEY(owners_id) REFERENCES owners(id);
+
+
+
+    -- Optimized Execution analysis by creating Indexes
+CREATE INDEX animal_id_asc ON visits (animal_id ASC);
+CREATE INDEX vet_id_asc ON visits (vet_id ASC);
+CREATE INDEX date_of_visit_asc ON visits (date_of_visit ASC);
+CREATE INDEX full_name_asc ON owners (full_name ASC);
+CREATE INDEX owners_age_asc ON owners (age ASC);
+CREATE INDEX emails_asc ON owners (email ASC);
+
+DROP INDEX date_of_visit_asc;
